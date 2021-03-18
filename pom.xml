@@ -155,7 +155,7 @@
             <gitFlowConfig>
                 <productionBranch>master</productionBranch>
                 <!-- default is develop, but we use development -->
-                <developmentBranch>development</developmentBranch>
+                <developmentBranch>develop</developmentBranch>
             </gitFlowConfig>
         </configuration>
     </plugin>
