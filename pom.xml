@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>example</groupId>
     <artifactId>example</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <properties>
         <micronaut.version>1.2.0</micronaut.version>
         <jdk.version>1.8</jdk.version>
