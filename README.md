@@ -22,6 +22,39 @@ https://github.com/aleksandr-m/gitflow-maven-plugin
     * remove feature-branch local and remote
 
 - start a release - `mvn gitflow:release-start`
+    * Checking for uncommitted changes.
+    * Fetching remote branch 'origin develop'.
+    * Comparing local branch 'develop' with remote 'origin/develop'.
+    * Checking out 'develop' branch.
+    * Checking for SNAPSHOT versions in dependencies.
+    * prompt for release versions
+    * Creating a new branch 'release/<RELEASEVERSION>' from 'develop' and checking it out.
+    * Updating version(s) to '<RELEASEVERSION>'.
+    * Committing changes.
+    * Pushing 'release/<RELEASEVERSION>' branch to remote.
 - finish a release - `mvn gitflow:release-finish`
+    *  Checking for uncommitted changes.
+    *  Checking out 'release/<RELEASEVERSION>' branch.
+    *  Checking for SNAPSHOT versions in dependencies.
+    *  Fetching remote branch 'origin release/<RELEASEVERSION>'.
+    *  Comparing local branch 'release/<RELEASEVERSION>' with remote 'origin/release/<RELEASEVERSION>'.
+    *  Fetching remote branch 'origin develop'.
+    *  Comparing local branch 'develop' with remote 'origin/develop'.
+    *  Fetching remote branch 'origin master'.
+    *  Comparing local branch 'master' with remote 'origin/master'.
+    *  Checking out 'release/<RELEASEVERSION>' branch.
+    *  Cleaning and testing the project.
+    *  Running Maven goals: verify
+    *  Checking out 'master' branch.
+    *  Merging (--no-ff) 'release/<RELEASEVERSION>' branch.
+    *  Creating '<RELEASEVERSION>' tag.
+    *  Checking out 'develop' branch.
+    *  Merging (--no-ff) 'release/<RELEASEVERSION>' branch.
+    *  Updating version(s) to '<SNAPSHOTVERSION>'.
+    *  Committing changes.
+    *  Pushing 'master' branch to 'origin'.
+    *  Pushing 'develop' branch to 'origin'.
+    *  Deleting remote branch 'release/<RELEASEVERSION>' from 'origin'.
+    *  Deleting 'release/<RELEASEVERSION>' branch.
 
 there are also goals for hotfix and support branches
